@@ -9,7 +9,7 @@ headers = {
 }
 
 response = requests.get(url, headers=headers)
-html_content = response.text
+html_content = response.text    
 
 if response.status_code == 200:
     print("Успех")
@@ -34,5 +34,5 @@ else:
     print("None")
 
 table = pd.DataFrame(list(data.items()), columns = ["Key", "Value"])
-print(table)
+
 table.to_excel("apple_inc_summary_table.xlsx")
