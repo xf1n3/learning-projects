@@ -6,8 +6,6 @@ response = requests.get(url)
 
 user1 = response.json()
 
-#1
-
 print(user1["name"])
 print(user1["email"])
 print(user1["address"]["city"])
