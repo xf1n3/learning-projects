@@ -5,7 +5,7 @@ import pandas as pd
 url = "https://en.wikipedia.org/wiki/Apple_Inc"
 
 headers = {
-    "User-Agent": "PythonScraper/1.0 (educational project)"
+    "User-Agent": "PythonScraper/1.0"
 }
 
 response = requests.get(url, headers=headers)
